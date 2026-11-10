@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dulce Hogar | Calidez & Cuidado para nuestros Abuelos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#25565B',       /* Azul verdoso del logo */
+                            terracotta: '#C85A48', /* Rojo terracota */
+                            mustard: '#E6A838',    /* Techo amarillo/dorado */
+                            salmon: '#F49F85',     /* Sol salmón */
+                            cream: '#FDFBF7',      /* Fondo crema cálido */
+                            card: '#FAF6F0',       /* Fondo para tarjetas */
+                            darkText: '#1E3538'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #1E3538;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(253,251,247,0.95) 0%, rgba(244,159,133,0.15) 100%);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-text font-sans antialiased selection:bg-brand-salmon/30 selection:text-brand-teal">
+
+    <!-- NAV -->
+    <header class="sticky top-0 z-50 bg-brand-cream/95 backdrop-blur-sm border-b border-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full bg-brand-teal flex items-center justify-center text-brand-gold text-xl font-bold shadow-sm">
+                    <i class="fa-solid fa-house-heart"> <img src="ico/logo.png" alt="Logo" class="w-full h-full object-cover rounded-full"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-bold text-xl text-brand-teal tracking-tight block leading-none">MI DULCE HOGAR</span>
+                    <span class="text-xs text-brand-terracotta font-medium tracking-widest uppercase">Calidez &amp; Cuidado</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-brand-teal">
+                <a href="#inicio" class="hover:text-brand-terracotta transition-colors py-2 border-b-2 border-brand-terracotta font-semibold">Inicio</a>
+                <a href="#quienes-somos" class="hover:text-brand-terracotta transition-colors py-2 border-b-2 border-transparent">Quiénes Somos</a>
+                <a href="#servicios" class="hover:text-brand-terracotta transition-colors py-2 border-b-2 border-transparent">Servicios</a>
+                <a href="#instalaciones" class="hover:text-brand-terracotta transition-colors py-2 border-b-2 border-transparent">Instalaciones</a>
+                <a href="#contacto" class="hover:text-brand-terracotta transition-colors py-2 border-b-2 border-transparent">Contacto</a>
+            </nav>
+
+            <a href="https://wa.me/542625436773?text=Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios." target="_blank" class="inline-flex items-center space-x-2 bg-brand-teal hover:bg-brand-teal/90 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all">
+                <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                <span>Consultar por WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- INICIO (HERO LIMPIO Y MINIMALISTA SIN FOTOS NI GALERÍAS) -->
+    <section id="inicio" class="py-16 md:py-24 border-b border-brand-sand relative overflow-hidden bg-gradient-to-b from-brand-cream via-brand-cream to-brand-sand/30">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <!-- BADGE SUPERIOR -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-sand/80 border border-brand-gold/30 text-brand-teal text-xs md:text-sm font-semibold tracking-wide uppercase mb-6 shadow-xs">
+                <span class="w-2 h-2 rounded-full bg-brand-terracotta"></span>
+                Residencia y Cuidado Integral del Adulto Mayor
+            </div>
+
+            <!-- TÍTULO LIMPIO Y DIRECTO -->
+            <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-extrabold text-brand-teal tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+                Tranquilidad para tu familia, <br class="hidden sm:inline">
+                <span class="text-brand-terracotta">el calor de un verdadero hogar</span> para tus abuelos.
+            </h1>
+
+            <!-- BAJADA -->
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+                Brindamos asistencia médica permanente, contención humana y un ambiente apacible diseñado para el descanso, la salud y el bienestar diario de nuestros residentes.
+            </p>
+
+            <!-- BOTONES DE ACCIÓN DIRECTOS -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#contacto" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-brand-teal text-white font-heading font-semibold text-base shadow-md hover:bg-brand-teal/90 hover:shadow-lg transition-all gap-3">
+                    <i class="fa-regular fa-calendar-check text-brand-gold"></i>
+                    <span>Agendar una Visita Guiada</span>
+                </a>
+                <a href="#servicios" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white border border-brand-sand text-brand-teal font-heading font-semibold text-base shadow-xs hover:bg-brand-sand/50 transition-all gap-2">
+                    <span>Ver Servicios Incluidos</span>
+                    <i class="fa-solid fa-arrow-down text-brand-terracotta text-sm"></i>
+                </a>
+            </div>
+
+            <!-- GRILLA DE DATOS IMPORTANTES (REEMPLAZA LAS IMÁGENES) -->
+            <div class="pt-8 border-t border-brand-sand/80">
+                <p class="text-xs font-semibold tracking-widest text-brand-terracotta uppercase mb-8">Puntos Clave de Nuestra Atención</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
+                    
+                    <!-- DATO 1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-brand-sand/80 shadow-xs hover:border-brand-teal/30 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-brand-teal text-base mb-1">Enfermería 24/7</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Asistencia constante, control de medicación y supervisión médica diaria.</p>
+                    </div>
+
+                    <!-- DATO 2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-brand-sand/80 shadow-xs hover:border-brand-teal/30 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-brand-terracotta/10 text-brand-terracotta flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-brand-teal text-base mb-1">Cupos Reducidos</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Atención totalmente personalizada para garantizar un trato cercano y digno.</p>
+                    </div>
+
+                    <!-- DATO 3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-brand-sand/80 shadow-xs hover:border-brand-teal/30 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-brand-teal text-base mb-1">Nutrición Adaptada</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Menús supervisados por profesionales según requerimientos de cada adulto.</p>
+                    </div>
+
+                    <!-- DATO 4 -->
+                    <div class="bg-white p-6 rounded-2xl border border-brand-sand/80 shadow-xs hover:border-brand-teal/30 transition-all">
+                        <div class="w-10 h-10 rounded-xl bg-brand-salmon/20 text-brand-terracotta flex items-center justify-center mb-4 text-lg">
+                            <i class="fa-solid fa-door-open"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-brand-teal text-base mb-1">Visitas Abiertas</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">Horarios amplios y adaptables para que las familias compartan momentos siempre.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <div class="relative order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1581579438747-1dc8d1e05fec?auto=format&fit=crop&q=80&w=1000" 
+                         alt="Personal cuidando con empatía a adulto mayor" 
+                         class="rounded-3xl shadow-xl w-full h-[400px] object-cover"
+                         onerror="this.src='https://placehold.co/600x400/C85A48/FFFFFF?text=Nuestro+Equipo';">
+                    <div class="absolute -bottom-6 -right-6 hidden sm:block bg-brand-card border-2 border-brand-mustard p-6 rounded-3xl shadow-lg max-w-xs">
+                        <p class="text-xs italic text-slate-600">"Nuestra prioridad es que cada abuelito se sienta verdaderamente como en su casa."</p>
+                        <span class="text-xs font-bold text-brand-teal mt-2 block">— Dirección General</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6 order-1 md:order-2">
+                    <div class="inline-block bg-brand-cream text-brand-teal px-4 py-1.5 rounded-full text-xs font-bold tracking-wide border border-brand-mustard/40">
+                        Nuestra Filosofía
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-teal">
+                        Un espacio donde el respeto y la dignidad son lo primero.
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        En <strong>Mi Dulce Hogar</strong> entendemos que la búsqueda de una residencia geriátrica es una decisión llena de sensibilidad. Por eso, hemos creado un ambiente donde la atención personalizada y el trato afectuoso son la base de cada jornada.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-brand-cream text-brand-terracotta rounded-xl flex items-center justify-center shrink-0 border border-brand-terracotta/20">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-teal text-base">Atención Humanizada</h4>
+                                <p class="text-sm text-slate-500">Escuchamos y acompañamos a cada residente entendiendo sus historias de vida y necesidades individuales.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-brand-cream text-brand-teal rounded-xl flex items-center justify-center shrink-0 border border-brand-teal/20">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-teal text-base">Equipo Multidisciplinario</h4>
+                                <p class="text-sm text-slate-500">Enfermeros, Servicio de emergencia, Terapistas y Nutricionistas trabajando de manera integrada.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 bg-brand-cream text-brand-mustard rounded-xl flex items-center justify-center shrink-0 border border-brand-mustard/20">
+                                <i class="fas fa-users flex"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-teal text-base">Transparencia y Familia</h4>
+                                <p class="text-sm text-slate-500">Puertas abiertas e información constante para que las familias tengan absoluta tranquilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-16 sm:py-24 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="bg-brand-salmon/20 text-brand-terracotta px-4 py-1.5 rounded-full text-xs font-bold tracking-wide">
+                    Cuidados Integrales
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-teal">Servicios Diseñados para su Bienestar</h2>
+                <p class="text-slate-600">Cada detalle está pensado para garantizar la salud física, emocional y social de nuestros adultos mayores.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-teal text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-teal/20">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Enfermería y Control 24/7</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Administración rigurosa de medicamentos, monitoreo continuo de signos vitales y asistencia constante.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> Asistencia personalizada
+                    </span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-terracotta text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-terracotta/20">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Kinesiología & Movilidad</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Ejercicios adaptados para fortalecer la motricidad, prevenir caídas y estimular la movilidad diaria.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> Rehabilitación física
+                    </span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-mustard text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-mustard/20">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Nutrición Personalizada</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Menús supervisados por profesionales, ajustados a requerimientos médicos y dietarios.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> 4 Comidas diarias nutritivas
+                    </span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-salmon text-brand-teal rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-salmon/30">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Talleres Recreativos</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Actividades cognitivas, arte, musicoterapia, lectura y manualidades para mantener activa la mente.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> Estimulación cognitiva
+                    </span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-teal text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-teal/20">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Habitaciones Acondicionadas</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Habitaciones amplias y luminosas, con equipamiento adaptado.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> Opción individual o compartida
+                    </span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow border border-brand-mustard/20 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-brand-terracotta text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-brand-terracotta/20">
+                            <i class="fas fa-shirt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-teal mb-3">Servicio de Hotelería</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">Lavandería propia, limpieza diaria de instalaciones y planchado para mayor confort del residente.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-brand-terracotta flex items-center gap-1">
+                        <i class="fas fa-check-circle"></i> Higiene y confort absoluto
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALACIONES -->
+    <section id="instalaciones" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="bg-brand-cream text-brand-teal px-4 py-1.5 rounded-full text-xs font-bold tracking-wide border border-brand-mustard/40">
+                        Nuestras Instalaciones
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-teal mt-3">Espacios pensados para el descanso y la paz</h2>
+                </div>
+                <p class="text-slate-600 max-w-md mt-4 md:mt-0 text-sm">
+                    Contamos con ambientes confortables, climatizados, sin barreras arquitectónicas y rodeados de áreas verdes.
+                </p>
+            </div>
+
+            <!-- Grid Galería -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="group relative overflow-hidden rounded-3xl shadow-md h-72">
+                    <img src="ico/frente-lejos-mejorada.jpg" 
+                         alt="Entrada principal, comodidad y seguridad." 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/600x400/25565B/FFFFFF?text=Jard%C3%ADn';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-teal/80 via-transparent to-transparent flex items-end p-6">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Entrada principal</h4>
+                            <p class="text-brand-cream/80 text-xs">Comodidad y seguridad en cada paso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-3xl shadow-md h-72">
+                    <img src="ico/entrada-lejos-mejorada.jpg" 
+                         alt="Llegando a casa, un espacio cálido y seguro." 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/600x400/E6A838/FFFFFF?text=Comedor';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-teal/80 via-transparent to-transparent flex items-end p-6">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Entrando a casa</h4>
+                            <p class="text-brand-cream/80 text-xs">Un lugar increíble para pasar momentos especiales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-3xl shadow-md h-72 sm:col-span-2 lg:col-span-1">
+                    <img src="ico/patio-mejorada.jpg" 
+                         alt="Patio ideal para paseos y actividades al aire libre." 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/600x400/C85A48/FFFFFF?text=Habitaciones';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-teal/80 via-transparent to-transparent flex items-end p-6">
+                        <div>
+                            <h4 class="text-white font-bold text-lg">Patio Ideal</h4>
+                            <p class="text-brand-cream/80 text-xs">Un espacio perfecto para disfrutar del aire libre y realizar actividades recreativas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO Y FORMULARIO -->
+    <section id="contacto" class="py-16 sm:py-24 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-mustard/20">
+                
+                <!-- Datos de contacto -->
+                <div class="lg:col-span-5 bg-brand-teal text-white p-8 sm:p-12 flex flex-col justify-between">
+                    <div>
+                        <span class="text-brand-salmon text-xs font-bold uppercase tracking-wider">Contactanos</span>
+                        <h2 class="text-3xl font-extrabold mt-2 mb-6">Estamos para acompañarte</h2>
+                        <p class="text-brand-cream/80 text-sm leading-relaxed mb-8">
+                            Entendemos tus dudas. Coordina una visita presencial para conocer a nuestro equipo, recorrer las instalaciones y asesorarte sin compromiso.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-brand-salmon shrink-0">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Dirección</h4>
+                                    <p class="text-xs text-brand-cream/70">Av. Hipólito Yrigoyen 10103, San Rafael, Mendoza.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-brand-salmon shrink-0">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Teléfono</h4>
+                                    <p class="text-xs text-brand-cream/70">+54 (2625) 43-6773</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-brand-salmon shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Correo Electrónico</h4>
+                                    <p class="text-xs text-brand-cream/70">contacto@midulcehogar.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-brand-salmon shrink-0">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm">Horario de Visitas</h4>
+                                    <p class="text-xs text-brand-cream/70">Lunes a Domingos: 10:00 a 18:00 hs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-white/10">
+                        <a href="https://wa.me/542625436773?text=Hola!%20Quisiera%20más%20información%20sobre%20sus%20servicios." target="_blank" class="w-full flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-2xl shadow transition-all">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                            <span>Escribinos al WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="lg:col-span-7 p-8 sm:p-12">
+                    <h3 class="text-2xl font-bold text-brand-teal mb-2">Envianos tu consulta</h3>
+                    <p class="text-xs text-slate-500 mb-6">Completá el formulario y nos comunicaremos con vos a la brevedad.</p>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Nombre Completo *</label>
+                                <input type="text" required placeholder="Ej: María García" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Teléfono / WhatsApp *</label>
+                                <input type="tel" required placeholder="Ej: 11 2345 6789" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Correo Electrónico</label>
+                            <input type="email" placeholder="ejemplo@correo.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">¿Cómo podemos ayudarte?</label>
+                            <textarea rows="4" placeholder="Escribí aquí tus dudas o indicá si querés agendar una visita..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-teal focus:ring-1 focus:ring-brand-teal text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-terracotta hover:bg-opacity-90 text-white font-bold py-4 rounded-xl shadow-md transition-all">
+                            Enviar Consulta
+                        </button>
+                        
+                        <div id="form-message" class="hidden text-center text-xs font-semibold text-emerald-600 pt-2">
+                            ¡Gracias por contactarnos! Te responderemos muy pronto.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-teal text-white border-t border-brand-teal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center p-1">
+                        <img src="ico/logo.png" alt="Logo" class="w-full h-full object-cover rounded-full"></i>
+                        <!--
+                        <svg viewBox="0 0 100 100" class="w-full h-full">
+                            <circle cx="65" cy="25" r="14" fill="#F49F85" />
+                            <path d="M 25 42 L 50 20 L 75 42 L 67 42 L 50 27 L 33 42 Z" fill="#E6A838" />
+                            <path d="M 32 42 L 68 42 L 65 65 L 35 65 Z" fill="#C85A48" />
+                            <path d="M 18 52 C 18 78 45 85 50 85 C 55 85 82 78 82 52 Z" fill="#25565B" />
+                        </svg>
+                        -->
+                    </div>
+                    <div>
+                        <span class="font-extrabold tracking-tight text-white block leading-none">MI DULCE HOGAR</span>
+                        <span class="text-[10px] tracking-wider text-brand-salmon uppercase font-semibold">Calidez & Cuidado</span>
+                    </div>
+                </div>
+
+                <div class="text-xs text-brand-cream/70 text-center">
+                    &copy; 2026 Mi Dulce Hogar. Todos los derechos reservados.
+                </div>
+
+                <div class="flex space-x-4 text-lg">
+                    <a href="#" class="w-9 h-9 bg-white/10 hover:bg-brand-salmon hover:text-brand-teal rounded-full flex items-center justify-center transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 bg-white/10 hover:bg-brand-salmon hover:text-brand-teal rounded-full flex items-center justify-center transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS de interacción -->
+    <script>
+        // Menú Mobile Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submission simulada
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formMessage.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
